@@ -8,13 +8,20 @@ public class Cilindro extends Forma{
         this.altura = altura;
     }
 
+    public double getRadio() {
+        return radio;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
     @Override
     public double area() {
         return 2 * Math.PI * radio * (radio + altura);
     }
 
     public String toString() {
-        return "Figura: cilindro\n" +
-                "Radio: " + radio + "cm, altura: " + altura + "cm";
+        return "Figura: cilindro, Radio: " + radio + "cm, altura: " + altura + "cm";
     }
 }

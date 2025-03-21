@@ -6,13 +6,16 @@ public class Esfera extends Forma{
         this.radio = radio;
     }
 
+    public double getRadio() {
+        return radio;
+    }
+
     @Override
     public double area() {
         return 4 * Math.PI * Math.pow(radio, 2);
     }
 
     public String toString() {
-        return "Figura: esfera\n" +
-                "Radio: " + radio + "cm";
+        return "Figura: esfera, Radio: " + radio + "cm";
     }
 }

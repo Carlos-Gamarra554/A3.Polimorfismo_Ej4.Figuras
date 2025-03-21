@@ -5,6 +5,10 @@ public class Pintura {
         this.cobertura = cobertura;
     }
 
+    public double getCobertura() {
+        return cobertura;
+    }
+
     public double pintar(Forma forma) {
         return forma.area() / cobertura;
     }

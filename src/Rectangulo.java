@@ -8,13 +8,20 @@ public class Rectangulo extends Forma{
         this.ancho = lado2;
     }
 
+    public double getLongitud() {
+        return longitud;
+    }
+
+    public double getAncho() {
+        return ancho;
+    }
+
     @Override
     public double area() {
         return longitud * ancho;
     }
 
     public String toString(){
-        return "Figura: rectángulo\n " +
-                "Longitud: " + longitud + "cm, ancho: " + ancho + "cm";
+        return "Figura: rectángulo, Longitud: " + longitud + "cm, ancho: " + ancho + "cm";
     }
 }
